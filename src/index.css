@@ -1,0 +1,128 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+header {
+  background-color: blue;
+  color: white;
+}
+
+.main {
+  height: 100%;
+}
+
+.Content {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.Content button {
+  padding: 0.4rem;
+  margin: 0.4rem;
+  background-color: lightgray;
+  color: black;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+
+.Content button:hover {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: blue;
+  padding: 0.4rem;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+li {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+  padding: 0.4rem 2rem;
+}
+
+.item svg {
+  cursor: pointer;
+  color: lightcoral;
+}
+
+.item svg:focus,
+.item svg:hover {
+  color: red;
+}
+
+label:focus, .item {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.addForm, .searchForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid white;
+}
+
+.addForm label, .searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type='text'], 
+.searchForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100%-50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+.addForm button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: blue;
+  cursor: pointer;
+}
+
+.addForm button:focus,
+.addForm button:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+}
