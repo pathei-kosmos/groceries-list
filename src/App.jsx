@@ -30,7 +30,7 @@ function App() {
       }
     }
 
-    setTimeout(() => fetchItems(), 1000);
+    fetchItems();
   }, []);
 
   const addItem = async (item) => {
